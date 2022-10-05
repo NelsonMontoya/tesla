@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const Section = ({title,description, leftBtnText, rightBtnText,backgroundImage}) => {
   return (
-    <Wrap image ={backgroundImage}>
+    <Wrap imagen ={backgroundImage}>
         <ItemText>
             <h1>{title}</h1>
             <p>{description}</p>
@@ -34,7 +34,7 @@ const Wrap = styled.div`
     background-size: cover;
     background-position:center;
     background-repeat: no-repeat;
-    background-image: ${props => `url('/images/${props.image}')`};
+    background-image: ${props => `url('/images/${props.imagen}')`};
     display: flex;
     flex-direction:column;
     justify-content: space-between; //vertical alignment
